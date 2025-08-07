@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+
+
+
+body {
+  @apply min-h-screen bg-gradient-to-b from-sky-500/10 from-40% via-sky-600/25 via-70% to-sky-700/50 to-90%;
+}
