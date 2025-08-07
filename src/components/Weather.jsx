@@ -8,7 +8,7 @@ import { FiCloudRain } from "react-icons/fi";
 
 // Weather component: muestra información del clima actual y pronóstico
 function Weather() {
-  const API_KEY = "5fc3e3c822237c31d7b39f9ab564ff0c";
+
   const [data, setData] = useState(null); // Estado para datos del clima actual
   const [loading, setLoading] = useState(false); // Estado de carga
   const [forecast, setForecast] = useState(null); // Estado para pronóstico
