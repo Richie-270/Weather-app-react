@@ -12,7 +12,7 @@ function Weather() {
   const [data, setData] = useState(null); // Estado para datos del clima actual
   const [loading, setLoading] = useState(false); // Estado de carga
   const [forecast, setForecast] = useState(null); // Estado para pronóstico
-
+  const API_KEY = import.meta.env.VITE_API_KEY;
   const city = useWeatherStore((state) => state.city); // Ciudad seleccionada
 
   // Efecto para obtener datos cuando cambia la ciudad
@@ -42,7 +42,7 @@ function Weather() {
       }
     };
     getWeather();
-  }, [city]);
+  }, [city, API_KEY]);
 
   // Mostrar mensaje de carga
   if (!loading || !data) {
